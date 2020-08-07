@@ -1,0 +1,1 @@
+../../../AppAuth/Source/AppAuth/macOS/OIDAuthorizationService+Mac.h

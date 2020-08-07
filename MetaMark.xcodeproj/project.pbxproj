@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F3A889D2052C7F500A0050E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88832052C7F400A0050E /* AppDelegate.m */; };
+		4F3A889E2052C7F500A0050E /* ConverterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88852052C7F400A0050E /* ConverterManager.m */; };
+		4F3A889F2052C7F500A0050E /* TextConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88882052C7F400A0050E /* TextConverter.m */; };
+		4F3A88A02052C7F500A0050E /* GfmConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A888A2052C7F400A0050E /* GfmConverter.m */; };
+		4F3A88A12052C7F500A0050E /* MarkdownConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A888C2052C7F400A0050E /* MarkdownConverter.m */; };
+		4F3A88A22052C7F500A0050E /* PandocConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A888E2052C7F400A0050E /* PandocConverter.m */; };
+		4F3A88A32052C7F500A0050E /* PhpMarkdownConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88902052C7F400A0050E /* PhpMarkdownConverter.m */; };
+		4F3A88A52052C7F500A0050E /* StrictMarkdownConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88942052C7F400A0050E /* StrictMarkdownConverter.m */; };
+		4F3A88A62052C7F500A0050E /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88962052C7F400A0050E /* EditorViewController.m */; };
+		4F3A88A72052C7F500A0050E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A88982052C7F400A0050E /* main.m */; };
+		4F3A88A82052C7F500A0050E /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A889A2052C7F400A0050E /* MainWindowController.m */; };
+		4F3A88A92052C7F500A0050E /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A889C2052C7F400A0050E /* PreviewViewController.m */; };
+		4F5AE299207D0F9700C72733 /* gfm-header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F5AE298207D0F9700C72733 /* gfm-header.txt */; };
+		4F5AE29C207E425F00C72733 /* PreferenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5AE29B207E425F00C72733 /* PreferenceManager.m */; };
+		4F7B193E208CCF04009BE0ED /* GitHubGistsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B193D208CCF04009BE0ED /* GitHubGistsClient.m */; };
+		4F7B1941208CD17F009BE0ED /* GitHubGistsContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B1940208CD17F009BE0ED /* GitHubGistsContent.m */; };
+		4F94D3F420458A3B00D85BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D3F320458A3B00D85BEA /* Assets.xcassets */; };
+		4F94D3F720458A3B00D85BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D3F520458A3B00D85BEA /* Main.storyboard */; };
+		4F94D40520458A3B00D85BEA /* MetaMarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94D40420458A3B00D85BEA /* MetaMarkTests.m */; };
+		4F94D41020458A3B00D85BEA /* MetaMarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94D40F20458A3B00D85BEA /* MetaMarkUITests.m */; };
+		4F94D4282045903100D85BEA /* pandoc in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D4272045903100D85BEA /* pandoc */; };
+		4F94D42B2046E6C300D85BEA /* gfm.css in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D42A2046E6C300D85BEA /* gfm.css */; };
+		4F94D42D2046E8A600D85BEA /* sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D42C2046E8A600D85BEA /* sample.md */; };
+		4F94D4312048488500D85BEA /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D4302048488500D85BEA /* markdown.css */; };
+		4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D43420484F7300D85BEA /* markdown-header.txt */; };
+		E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */; };
+		E29C2B9924DD9BAB000067E3 /* markdown.css.2.1.3 in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */; };
+		F238DC77B94B402EA55B030D /* libPods-MetaMark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F94D40120458A3B00D85BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F94D3E220458A3B00D85BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F94D3E920458A3B00D85BEA;
+			remoteInfo = MetaMark;
+		};
+		4F94D40C20458A3B00D85BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F94D3E220458A3B00D85BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F94D3E920458A3B00D85BEA;
+			remoteInfo = MetaMark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F3A88822052C7F400A0050E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F3A88832052C7F400A0050E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F3A88842052C7F400A0050E /* ConverterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterManager.h; sourceTree = "<group>"; };
+		4F3A88852052C7F400A0050E /* ConverterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterManager.m; sourceTree = "<group>"; };
+		4F3A88872052C7F400A0050E /* TextConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextConverter.h; sourceTree = "<group>"; };
+		4F3A88882052C7F400A0050E /* TextConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextConverter.m; sourceTree = "<group>"; };
+		4F3A88892052C7F400A0050E /* GfmConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GfmConverter.h; sourceTree = "<group>"; };
+		4F3A888A2052C7F400A0050E /* GfmConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GfmConverter.m; sourceTree = "<group>"; };
+		4F3A888B2052C7F400A0050E /* MarkdownConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownConverter.h; sourceTree = "<group>"; };
+		4F3A888C2052C7F400A0050E /* MarkdownConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownConverter.m; sourceTree = "<group>"; };
+		4F3A888D2052C7F400A0050E /* PandocConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PandocConverter.h; sourceTree = "<group>"; };
+		4F3A888E2052C7F400A0050E /* PandocConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PandocConverter.m; sourceTree = "<group>"; };
+		4F3A888F2052C7F400A0050E /* PhpMarkdownConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhpMarkdownConverter.h; sourceTree = "<group>"; };
+		4F3A88902052C7F400A0050E /* PhpMarkdownConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhpMarkdownConverter.m; sourceTree = "<group>"; };
+		4F3A88932052C7F400A0050E /* StrictMarkdownConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrictMarkdownConverter.h; sourceTree = "<group>"; };
+		4F3A88942052C7F400A0050E /* StrictMarkdownConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrictMarkdownConverter.m; sourceTree = "<group>"; };
+		4F3A88952052C7F400A0050E /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		4F3A88962052C7F400A0050E /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		4F3A88972052C7F400A0050E /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		4F3A88982052C7F400A0050E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F3A88992052C7F400A0050E /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		4F3A889A2052C7F400A0050E /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		4F3A889B2052C7F400A0050E /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		4F3A889C2052C7F400A0050E /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		4F5AE298207D0F9700C72733 /* gfm-header.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gfm-header.txt"; sourceTree = "<group>"; };
+		4F5AE29A207E425F00C72733 /* PreferenceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferenceManager.h; sourceTree = "<group>"; };
+		4F5AE29B207E425F00C72733 /* PreferenceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferenceManager.m; sourceTree = "<group>"; };
+		4F7B193C208CCF04009BE0ED /* GitHubGistsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubGistsClient.h; sourceTree = "<group>"; };
+		4F7B193D208CCF04009BE0ED /* GitHubGistsClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubGistsClient.m; sourceTree = "<group>"; };
+		4F7B193F208CD17F009BE0ED /* GitHubGistsContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubGistsContent.h; sourceTree = "<group>"; };
+		4F7B1940208CD17F009BE0ED /* GitHubGistsContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubGistsContent.m; sourceTree = "<group>"; };
+		4F94D3EA20458A3B00D85BEA /* MetaMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F94D3F320458A3B00D85BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F94D3F620458A3B00D85BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F94D3F820458A3B00D85BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F94D3FB20458A3B00D85BEA /* MetaMark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetaMark.entitlements; sourceTree = "<group>"; };
+		4F94D40020458A3B00D85BEA /* MetaMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F94D40420458A3B00D85BEA /* MetaMarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaMarkTests.m; sourceTree = "<group>"; };
+		4F94D40620458A3B00D85BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F94D40B20458A3B00D85BEA /* MetaMarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaMarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F94D40F20458A3B00D85BEA /* MetaMarkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetaMarkUITests.m; sourceTree = "<group>"; };
+		4F94D41120458A3B00D85BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F94D4272045903100D85BEA /* pandoc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pandoc; sourceTree = "<group>"; };
+		4F94D42A2046E6C300D85BEA /* gfm.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = gfm.css; sourceTree = "<group>"; };
+		4F94D42C2046E8A600D85BEA /* sample.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = sample.md; sourceTree = "<group>"; };
+		4F94D4302048488500D85BEA /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
+		4F94D43420484F7300D85BEA /* markdown-header.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "markdown-header.txt"; sourceTree = "<group>"; };
+		B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetaMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.debug.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.debug.xcconfig"; sourceTree = "<group>"; };
+		E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "pandoc-citeproc"; sourceTree = "<group>"; };
+		E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markdown.css.2.1.3; sourceTree = "<group>"; };
+		FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.release.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F94D3E720458A3B00D85BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F238DC77B94B402EA55B030D /* libPods-MetaMark.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94D3FD20458A3B00D85BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94D40820458A3B00D85BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DF1E5B35E9D442EF4BE07B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */,
+				FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4F3A88812052C7F400A0050E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4F3A88862052C7F400A0050E /* Converter */,
+				4F3A88822052C7F400A0050E /* AppDelegate.h */,
+				4F3A88832052C7F400A0050E /* AppDelegate.m */,
+				4F3A88952052C7F400A0050E /* EditorViewController.h */,
+				4F3A88962052C7F400A0050E /* EditorViewController.m */,
+				4F3A88972052C7F400A0050E /* Logger.h */,
+				4F3A88982052C7F400A0050E /* main.m */,
+				4F3A88992052C7F400A0050E /* MainWindowController.h */,
+				4F3A889A2052C7F400A0050E /* MainWindowController.m */,
+				4F3A889B2052C7F400A0050E /* PreviewViewController.h */,
+				4F3A889C2052C7F400A0050E /* PreviewViewController.m */,
+				4F5AE29A207E425F00C72733 /* PreferenceManager.h */,
+				4F5AE29B207E425F00C72733 /* PreferenceManager.m */,
+				4F7B193C208CCF04009BE0ED /* GitHubGistsClient.h */,
+				4F7B193D208CCF04009BE0ED /* GitHubGistsClient.m */,
+				4F7B193F208CD17F009BE0ED /* GitHubGistsContent.h */,
+				4F7B1940208CD17F009BE0ED /* GitHubGistsContent.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4F3A88862052C7F400A0050E /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				4F3A88842052C7F400A0050E /* ConverterManager.h */,
+				4F3A88852052C7F400A0050E /* ConverterManager.m */,
+				4F3A88892052C7F400A0050E /* GfmConverter.h */,
+				4F3A888A2052C7F400A0050E /* GfmConverter.m */,
+				4F3A888B2052C7F400A0050E /* MarkdownConverter.h */,
+				4F3A888C2052C7F400A0050E /* MarkdownConverter.m */,
+				4F3A888D2052C7F400A0050E /* PandocConverter.h */,
+				4F3A888E2052C7F400A0050E /* PandocConverter.m */,
+				4F3A888F2052C7F400A0050E /* PhpMarkdownConverter.h */,
+				4F3A88902052C7F400A0050E /* PhpMarkdownConverter.m */,
+				4F3A88932052C7F400A0050E /* StrictMarkdownConverter.h */,
+				4F3A88942052C7F400A0050E /* StrictMarkdownConverter.m */,
+				4F3A88872052C7F400A0050E /* TextConverter.h */,
+				4F3A88882052C7F400A0050E /* TextConverter.m */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		4F94D3E120458A3B00D85BEA = {
+			isa = PBXGroup;
+			children = (
+				4F94D3EC20458A3B00D85BEA /* MetaMark */,
+				4F94D40320458A3B00D85BEA /* MetaMarkTests */,
+				4F94D40E20458A3B00D85BEA /* MetaMarkUITests */,
+				4F94D3EB20458A3B00D85BEA /* Products */,
+				46DF1E5B35E9D442EF4BE07B /* Pods */,
+				F7FB241C72DC9FD0D9A9EAD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F94D3EB20458A3B00D85BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F94D3EA20458A3B00D85BEA /* MetaMark.app */,
+				4F94D40020458A3B00D85BEA /* MetaMarkTests.xctest */,
+				4F94D40B20458A3B00D85BEA /* MetaMarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F94D3EC20458A3B00D85BEA /* MetaMark */ = {
+			isa = PBXGroup;
+			children = (
+				4F3A88812052C7F400A0050E /* Sources */,
+				4F94D4292046E6C300D85BEA /* Resources */,
+				4F94D4262045903100D85BEA /* Binaries */,
+				4F94D3F320458A3B00D85BEA /* Assets.xcassets */,
+				4F94D3F520458A3B00D85BEA /* Main.storyboard */,
+				4F94D3F820458A3B00D85BEA /* Info.plist */,
+				4F94D3FB20458A3B00D85BEA /* MetaMark.entitlements */,
+			);
+			path = MetaMark;
+			sourceTree = "<group>";
+		};
+		4F94D40320458A3B00D85BEA /* MetaMarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F94D40420458A3B00D85BEA /* MetaMarkTests.m */,
+				4F94D40620458A3B00D85BEA /* Info.plist */,
+			);
+			path = MetaMarkTests;
+			sourceTree = "<group>";
+		};
+		4F94D40E20458A3B00D85BEA /* MetaMarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F94D40F20458A3B00D85BEA /* MetaMarkUITests.m */,
+				4F94D41120458A3B00D85BEA /* Info.plist */,
+			);
+			path = MetaMarkUITests;
+			sourceTree = "<group>";
+		};
+		4F94D4262045903100D85BEA /* Binaries */ = {
+			isa = PBXGroup;
+			children = (
+				E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */,
+				4F94D4272045903100D85BEA /* pandoc */,
+			);
+			path = Binaries;
+			sourceTree = "<group>";
+		};
+		4F94D4292046E6C300D85BEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */,
+				4F5AE298207D0F9700C72733 /* gfm-header.txt */,
+				4F94D42A2046E6C300D85BEA /* gfm.css */,
+				4F94D43420484F7300D85BEA /* markdown-header.txt */,
+				4F94D4302048488500D85BEA /* markdown.css */,
+				4F94D42C2046E8A600D85BEA /* sample.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7FB241C72DC9FD0D9A9EAD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F94D3E920458A3B00D85BEA /* MetaMark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F94D41420458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMark" */;
+			buildPhases = (
+				25B23FED602241E33CE35D0C /* [CP] Check Pods Manifest.lock */,
+				4F7B1945208E1774009BE0ED /* ShellScript */,
+				4F94D3E620458A3B00D85BEA /* Sources */,
+				4F94D3E720458A3B00D85BEA /* Frameworks */,
+				4F94D3E820458A3B00D85BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetaMark;
+			productName = MetaMark;
+			productReference = 4F94D3EA20458A3B00D85BEA /* MetaMark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F94D3FF20458A3B00D85BEA /* MetaMarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F94D41720458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMarkTests" */;
+			buildPhases = (
+				4F94D3FC20458A3B00D85BEA /* Sources */,
+				4F94D3FD20458A3B00D85BEA /* Frameworks */,
+				4F94D3FE20458A3B00D85BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F94D40220458A3B00D85BEA /* PBXTargetDependency */,
+			);
+			name = MetaMarkTests;
+			productName = MetaMarkTests;
+			productReference = 4F94D40020458A3B00D85BEA /* MetaMarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F94D40A20458A3B00D85BEA /* MetaMarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F94D41A20458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMarkUITests" */;
+			buildPhases = (
+				4F94D40720458A3B00D85BEA /* Sources */,
+				4F94D40820458A3B00D85BEA /* Frameworks */,
+				4F94D40920458A3B00D85BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F94D40D20458A3B00D85BEA /* PBXTargetDependency */,
+			);
+			name = MetaMarkUITests;
+			productName = MetaMarkUITests;
+			productReference = 4F94D40B20458A3B00D85BEA /* MetaMarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F94D3E220458A3B00D85BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Francesco Baldassarri";
+				TargetAttributes = {
+					4F94D3E920458A3B00D85BEA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					4F94D3FF20458A3B00D85BEA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4F94D3E920458A3B00D85BEA;
+					};
+					4F94D40A20458A3B00D85BEA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4F94D3E920458A3B00D85BEA;
+					};
+				};
+			};
+			buildConfigurationList = 4F94D3E520458A3B00D85BEA /* Build configuration list for PBXProject "MetaMark" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F94D3E120458A3B00D85BEA;
+			productRefGroup = 4F94D3EB20458A3B00D85BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F94D3E920458A3B00D85BEA /* MetaMark */,
+				4F94D3FF20458A3B00D85BEA /* MetaMarkTests */,
+				4F94D40A20458A3B00D85BEA /* MetaMarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F94D3E820458A3B00D85BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F94D42B2046E6C300D85BEA /* gfm.css in Resources */,
+				4F94D3F420458A3B00D85BEA /* Assets.xcassets in Resources */,
+				4F5AE299207D0F9700C72733 /* gfm-header.txt in Resources */,
+				4F94D42D2046E8A600D85BEA /* sample.md in Resources */,
+				E29C2B9924DD9BAB000067E3 /* markdown.css.2.1.3 in Resources */,
+				4F94D4282045903100D85BEA /* pandoc in Resources */,
+				E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */,
+				4F94D3F720458A3B00D85BEA /* Main.storyboard in Resources */,
+				4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */,
+				4F94D4312048488500D85BEA /* markdown.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94D3FE20458A3B00D85BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94D40920458A3B00D85BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25B23FED602241E33CE35D0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaMark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F7B1945208E1774009BE0ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -e \"${PROJECT_DIR}/MetaMark/Binaries/pandoc\" ]; then\n  exit 0\nfi\n\n# Download and copy Pandoc library\nPANDOC_VERSION=\"2.1.3\"\nPANDOC_FILE_NAME=\"pandoc-${PANDOC_VERSION}\"\n\nrm -rf \"${PROJECT_DIR}/tmp\"\nmkdir \"${PROJECT_DIR}/tmp\"\ncd \"${PROJECT_DIR}/tmp\"\n\nwget \"https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/${PANDOC_FILE_NAME}-macOS.zip\"\nunzip \"pandoc-${PANDOC_VERSION}-macOS.zip\"\n\nmkdir -p \"${PROJECT_DIR}/MetaMark/Binaries\"\ncp \"${PANDOC_FILE_NAME}/bin/pandoc\" \"${PROJECT_DIR}/MetaMark/Binaries/.\"\n\nrm -rf \"${PROJECT_DIR}/tmp\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F94D3E620458A3B00D85BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3A88A92052C7F500A0050E /* PreviewViewController.m in Sources */,
+				4F5AE29C207E425F00C72733 /* PreferenceManager.m in Sources */,
+				4F3A889F2052C7F500A0050E /* TextConverter.m in Sources */,
+				4F3A88A32052C7F500A0050E /* PhpMarkdownConverter.m in Sources */,
+				4F3A889D2052C7F500A0050E /* AppDelegate.m in Sources */,
+				4F3A88A62052C7F500A0050E /* EditorViewController.m in Sources */,
+				4F3A889E2052C7F500A0050E /* ConverterManager.m in Sources */,
+				4F3A88A82052C7F500A0050E /* MainWindowController.m in Sources */,
+				4F3A88A52052C7F500A0050E /* StrictMarkdownConverter.m in Sources */,
+				4F3A88A12052C7F500A0050E /* MarkdownConverter.m in Sources */,
+				4F3A88A02052C7F500A0050E /* GfmConverter.m in Sources */,
+				4F7B1941208CD17F009BE0ED /* GitHubGistsContent.m in Sources */,
+				4F7B193E208CCF04009BE0ED /* GitHubGistsClient.m in Sources */,
+				4F3A88A72052C7F500A0050E /* main.m in Sources */,
+				4F3A88A22052C7F500A0050E /* PandocConverter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94D3FC20458A3B00D85BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F94D40520458A3B00D85BEA /* MetaMarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F94D40720458A3B00D85BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F94D41020458A3B00D85BEA /* MetaMarkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F94D40220458A3B00D85BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F94D3E920458A3B00D85BEA /* MetaMark */;
+			targetProxy = 4F94D40120458A3B00D85BEA /* PBXContainerItemProxy */;
+		};
+		4F94D40D20458A3B00D85BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F94D3E920458A3B00D85BEA /* MetaMark */;
+			targetProxy = 4F94D40C20458A3B00D85BEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F94D3F520458A3B00D85BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F94D3F620458A3B00D85BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F94D41220458A3B00D85BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F94D41320458A3B00D85BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F94D41520458A3B00D85BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4LG28JB2V;
+				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
+				PRODUCT_NAME = MetaMark;
+			};
+			name = Debug;
+		};
+		4F94D41620458A3B00D85BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4LG28JB2V;
+				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
+				PRODUCT_NAME = MetaMark;
+			};
+			name = Release;
+		};
+		4F94D41820458A3B00D85BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4LG28JB2V;
+				INFOPLIST_FILE = MetaMarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaMark.app/Contents/MacOS/MetaMark";
+			};
+			name = Debug;
+		};
+		4F94D41920458A3B00D85BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4LG28JB2V;
+				INFOPLIST_FILE = MetaMarkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaMark.app/Contents/MacOS/MetaMark";
+			};
+			name = Release;
+		};
+		4F94D41B20458A3B00D85BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4LG28JB2V;
+				INFOPLIST_FILE = MetaMarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MetaMark;
+			};
+			name = Debug;
+		};
+		4F94D41C20458A3B00D85BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B4LG28JB2V;
+				INFOPLIST_FILE = MetaMarkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MetaMark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F94D3E520458A3B00D85BEA /* Build configuration list for PBXProject "MetaMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F94D41220458A3B00D85BEA /* Debug */,
+				4F94D41320458A3B00D85BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F94D41420458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F94D41520458A3B00D85BEA /* Debug */,
+				4F94D41620458A3B00D85BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F94D41720458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F94D41820458A3B00D85BEA /* Debug */,
+				4F94D41920458A3B00D85BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F94D41A20458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F94D41B20458A3B00D85BEA /* Debug */,
+				4F94D41C20458A3B00D85BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F94D3E220458A3B00D85BEA /* Project object */;
+}

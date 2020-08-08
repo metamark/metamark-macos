@@ -688,8 +688,7 @@
                 <windowController id="B8D-0N-5wS" customClass="MainWindowController" sceneMemberID="viewController">
                     <window key="window" title="MetaMark" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="688" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <toolbar key="toolbar" implicitIdentifier="0111CAD2-44B3-449F-B8E0-23621B768943" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="dWm-gl-GYv">
                             <allowedToolbarItems>
@@ -775,8 +774,8 @@
             <objects>
                 <splitViewController id="Tpz-d9-Q2m" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="1lG-lM-mcr"/>
                         <splitViewItem id="zkC-3U-I1G"/>
+                        <splitViewItem id="1lG-lM-mcr"/>
                     </splitViewItems>
                     <splitView key="splitView" misplaced="YES" id="Mt0-l8-o0Q">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -787,13 +786,66 @@
                     </splitView>
                     <connections>
                         <outlet property="splitView" destination="Mt0-l8-o0Q" id="NFS-Vm-9de"/>
-                        <segue destination="Wyk-aA-02j" kind="relationship" relationship="splitItems" id="tGm-eB-MuW"/>
                         <segue destination="fDo-d1-ebe" kind="relationship" relationship="splitItems" id="Ymh-rE-sf9"/>
+                        <segue destination="Wyk-aA-02j" kind="relationship" relationship="splitItems" id="tGm-eB-MuW"/>
                     </connections>
                 </splitViewController>
                 <customObject id="9sR-xM-zEI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="80" y="1001"/>
+        </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="qak-2e-6Ue">
+            <objects>
+                <viewController id="fDo-d1-ebe" customClass="PreviewViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="CDT-GX-RXI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hq-GR-HlJ">
+                                <rect key="frame" x="0.0" y="37" width="450" height="235"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                                <connections>
+                                    <outlet property="UIDelegate" destination="fDo-d1-ebe" id="CHc-9J-npy"/>
+                                    <outlet property="navigationDelegate" destination="fDo-d1-ebe" id="SYb-AA-bHN"/>
+                                </connections>
+                            </wkWebView>
+                            <button verticalHuggingPriority="750" id="m1S-Ha-xc4">
+                                <rect key="frame" x="413.5" y="273" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_refresh_48pt" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Udd-dG-KDm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="reloadButtonClicked:" target="fDo-d1-ebe" id="gfL-Jn-PxK"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="E8q-Uf-9V0">
+                                <rect key="frame" x="18" y="277" width="179" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Automatically reload page" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="p1W-aW-0GJ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="ZWO-ys-s51" name="value" keyPath="values.AutoReloadEnabled" id="1s7-Km-vjZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5Hq-GR-HlJ" id="Yuz-am-CCk"/>
+                    </connections>
+                </viewController>
+                <customObject id="a1O-bo-B4z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="ZWO-ys-s51"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1187"/>
         </scene>
         <!--Editor View Controller-->
         <scene sceneID="VDE-HV-asD">
@@ -824,16 +876,16 @@
                                         </textView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="91I-tB-JAq">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="91I-tB-JAq">
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GjT-bi-Xo7">
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GjT-bi-Xo7">
                                     <rect key="frame" x="434" y="1" width="15" height="233"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-y9-WOF">
+                            <textField verticalHuggingPriority="750" id="1pc-y9-WOF">
                                 <rect key="frame" x="0.0" y="270" width="450" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Title" drawsBackground="YES" id="3b4-OX-mJz">
@@ -940,59 +992,6 @@
                 <customObject id="bB9-gD-jzy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="815"/>
-        </scene>
-        <!--Preview View Controller-->
-        <scene sceneID="qak-2e-6Ue">
-            <objects>
-                <viewController id="fDo-d1-ebe" customClass="PreviewViewController" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="CDT-GX-RXI">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <wkWebView wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Hq-GR-HlJ">
-                                <rect key="frame" x="0.0" y="37" width="450" height="235"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                                <connections>
-                                    <outlet property="UIDelegate" destination="fDo-d1-ebe" id="CHc-9J-npy"/>
-                                    <outlet property="navigationDelegate" destination="fDo-d1-ebe" id="SYb-AA-bHN"/>
-                                </connections>
-                            </wkWebView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1S-Ha-xc4">
-                                <rect key="frame" x="413.5" y="273" width="32" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_refresh_48pt" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Udd-dG-KDm">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="reloadButtonClicked:" target="fDo-d1-ebe" id="gfL-Jn-PxK"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8q-Uf-9V0">
-                                <rect key="frame" x="18" y="277" width="179" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Automatically reload page" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="p1W-aW-0GJ">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <binding destination="ZWO-ys-s51" name="value" keyPath="values.AutoReloadEnabled" id="1s7-Km-vjZ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="webView" destination="5Hq-GR-HlJ" id="Yuz-am-CCk"/>
-                    </connections>
-                </viewController>
-                <customObject id="a1O-bo-B4z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <userDefaultsController representsSharedInstance="YES" id="ZWO-ys-s51"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="1187"/>
         </scene>
     </scenes>
     <resources>

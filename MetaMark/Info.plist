@@ -25,8 +25,9 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>oauth.iwaki.info</string>
-				<string>qiita.oauth.iwaki.info</string>
+				<string>oauth.metamark.app</string>
+				<string>app.metamark</string>
+				<string>app.metamark.macos</string>
 			</array>
 		</dict>
 	</array>

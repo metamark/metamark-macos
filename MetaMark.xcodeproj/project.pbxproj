@@ -32,6 +32,7 @@
 		4F94D42D2046E8A600D85BEA /* sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D42C2046E8A600D85BEA /* sample.md */; };
 		4F94D4312048488500D85BEA /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D4302048488500D85BEA /* markdown.css */; };
 		4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D43420484F7300D85BEA /* markdown-header.txt */; };
+		E229E47324E07FE200A02729 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E229E47224E07FE200A02729 /* Credits.rtf */; };
 		E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */; };
 		E29C2B9924DD9BAB000067E3 /* markdown.css.2.1.3 in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */; };
 		F238DC77B94B402EA55B030D /* libPods-MetaMark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */; };
@@ -104,6 +105,7 @@
 		4F94D43420484F7300D85BEA /* markdown-header.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "markdown-header.txt"; sourceTree = "<group>"; };
 		B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetaMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.debug.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.debug.xcconfig"; sourceTree = "<group>"; };
+		E229E47224E07FE200A02729 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "pandoc-citeproc"; sourceTree = "<group>"; };
 		E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markdown.css.2.1.3; sourceTree = "<group>"; };
 		FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.release.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				4F94D3F520458A3B00D85BEA /* Main.storyboard */,
 				4F94D3F820458A3B00D85BEA /* Info.plist */,
 				4F94D3FB20458A3B00D85BEA /* MetaMark.entitlements */,
+				E229E47224E07FE200A02729 /* Credits.rtf */,
 			);
 			path = MetaMark;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				4F94D4282045903100D85BEA /* pandoc in Resources */,
 				E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */,
 				4F94D3F720458A3B00D85BEA /* Main.storyboard in Resources */,
+				E229E47324E07FE200A02729 /* Credits.rtf in Resources */,
 				4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */,
 				4F94D4312048488500D85BEA /* markdown.css in Resources */,
 			);
@@ -635,7 +639,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = B4LG28JB2V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
@@ -655,7 +659,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = B4LG28JB2V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";

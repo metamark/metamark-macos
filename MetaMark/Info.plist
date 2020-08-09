@@ -42,5 +42,7 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
 </dict>
 </plist>

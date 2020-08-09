@@ -1,9 +1,9 @@
 //
 //  MainWindowController.h
-//  MarkdownEditor
+//  MetaMark
 //
-//  Created by Iwaki Satoshi on 2018/03/03.
-//  Copyright © 2018 Satoshi Iwaki. All rights reserved.
+//  Originally developed by Iwaki Satoshi (2018), then forked by Francesco Baldassarri (2020)
+//  Markdown Editor Copyright © 2018 Satoshi Iwaki. MetaMark Copyright © 2020 Francesco Baldassarri.
 //
 
 #import <Cocoa/Cocoa.h>

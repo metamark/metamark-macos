@@ -44,6 +44,8 @@
             return [NSString stringWithFormat:@"**%@**", string];
         case TextConverterFormatItalic:
             return [NSString stringWithFormat:@"*%@*", string];
+        case TextConverterFormatBoldItalic:
+                return [NSString stringWithFormat:@"***%@***", string];
         case TextConverterFormatStrikeThrough:
             return [NSString stringWithFormat:@"~~%@~~", string];
         case TextConverterFormatCode: {

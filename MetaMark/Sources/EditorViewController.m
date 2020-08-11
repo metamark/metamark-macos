@@ -69,6 +69,17 @@
     [self replaceCharactersInRange:range withString:string];
 }
 
+- (IBAction)boldItalicButtonClicked:(NSButton *)sender {
+    NSRange range = self.textView.selectedRange;
+    if (range.length == 0) {
+        return;
+    }
+    NSString *selectedString = [self.textView.string substringWithRange:range];
+    NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
+                                                                                            format:TextConverterFormatBoldItalic];
+    [self replaceCharactersInRange:range withString:string];
+}
+
 - (IBAction)strikeThroughButtonClicked:(NSButton *)sender {
     NSRange range = self.textView.selectedRange;
     if (range.length == 0) {

@@ -1,5 +1,8 @@
 # README for MetaMark git code repository 
 
+# Known Issues
+
+Menu > Format > Font > Bold+Italic addFontTrait doesn't work
 
 
 

@@ -362,6 +362,11 @@
                                                             <action selector="addFontTrait:" target="YLy-65-1bz" id="IHV-OB-c03"/>
                                                         </connections>
                                                     </menuItem>
+                                                    <menuItem title="Bold + Italic" keyEquivalent="B" id="IGK-f3-mlg">
+                                                        <connections>
+                                                            <action selector="addFontTrait:" target="YLy-65-1bz" id="7dP-c6-tki"/>
+                                                        </connections>
+                                                    </menuItem>
                                                     <menuItem title="Underline" keyEquivalent="u" id="WRG-CD-K1S">
                                                         <connections>
                                                             <action selector="underline:" target="Ady-hI-5gd" id="FYS-2b-JAY"/>
@@ -868,7 +873,7 @@
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="550" height="233"/>
-                                            <size key="maxSize" width="550" height="10000000"/>
+                                            <size key="maxSize" width="567" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
                                                 <outlet property="delegate" destination="Wyk-aA-02j" id="avN-s4-81N"/>
@@ -990,7 +995,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="italicButtonClicked:" target="Wyk-aA-02j" id="r2p-Dd-AQx"/>
+                                    <action selector="boldItalicButtonClicked:" target="Wyk-aA-02j" id="r2p-Dd-AQx"/>
                                 </connections>
                             </button>
                         </subviews>

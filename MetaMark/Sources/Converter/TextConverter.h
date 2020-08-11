@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, TextConverterFormat) {
     TextConverterFormatBold,
     TextConverterFormatItalic,
+    TextConverterFormatBoldItalic,
     TextConverterFormatStrikeThrough,
     TextConverterFormatQuote,
     TextConverterFormatCode,

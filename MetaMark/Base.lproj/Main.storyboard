@@ -861,18 +861,18 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiR-Yz-1hy">
-                                <rect key="frame" x="0.0" y="37" width="567" height="235"/>
+                                <rect key="frame" x="0.0" y="37" width="520" height="235"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" id="9vL-R4-GZT">
-                                    <rect key="frame" x="1" y="1" width="550" height="233"/>
+                                    <rect key="frame" x="1" y="1" width="503" height="233"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" selectionGranularity="word" findStyle="panel" incrementalSearchingEnabled="YES" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" smartInsertDelete="YES" id="OK6-y4-1mW">
-                                            <rect key="frame" x="0.0" y="0.0" width="550" height="233"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="503" height="233"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="550" height="233"/>
+                                            <size key="minSize" width="503" height="233"/>
                                             <size key="maxSize" width="567" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -886,12 +886,12 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GjT-bi-Xo7">
-                                    <rect key="frame" x="551" y="1" width="15" height="233"/>
+                                    <rect key="frame" x="504" y="1" width="15" height="233"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <textField verticalHuggingPriority="750" id="1pc-y9-WOF">
-                                <rect key="frame" x="0.0" y="270" width="567" height="30"/>
+                                <rect key="frame" x="0.0" y="270" width="520" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Title" drawsBackground="YES" id="3b4-OX-mJz">
                                     <font key="font" metaFont="system"/>
@@ -965,6 +965,61 @@
                                     <action selector="boldButtonClicked:" target="Wyk-aA-02j" id="0ol-1X-U2H"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" id="wKQ-8L-nft">
+                                <rect key="frame" x="526.5" y="269" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h1_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="f44-Ge-Xku">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="h1ButtonClicked:" target="Wyk-aA-02j" id="TH8-Vv-zy9"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" id="5CZ-fa-cde">
+                                <rect key="frame" x="526.5" y="237" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h2_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L3d-xO-cWd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="h2ButtonClicked:" target="Wyk-aA-02j" id="oqf-qW-ecs"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" id="3Si-KP-s9h">
+                                <rect key="frame" x="527.5" y="205" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h3_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RZV-n1-Fi2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="h3ButtonClicked:" target="Wyk-aA-02j" id="KZX-Yt-U99"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" id="uUj-zl-bs8">
+                                <rect key="frame" x="527.5" y="173" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h4_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qWR-eH-62N">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="h4ButtonClicked:" target="Wyk-aA-02j" id="Y4e-vR-Tnh"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" id="KJp-4y-YGZ">
+                                <rect key="frame" x="527.5" y="142" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h5_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HB3-aB-olb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="h5ButtonClicked:" target="Wyk-aA-02j" id="0GA-If-I6u"/>
+                                </connections>
+                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpn-ON-XBf">
                                 <rect key="frame" x="43.5" y="5" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -998,6 +1053,17 @@
                                     <action selector="boldItalicButtonClicked:" target="Wyk-aA-02j" id="r2p-Dd-AQx"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" id="8SM-GU-cQf">
+                                <rect key="frame" x="527.5" y="110" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h6_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aGr-oy-LhT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="h6ButtonClicked:" target="Wyk-aA-02j" id="7Ou-KT-bVC"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -1014,6 +1080,12 @@
         <image name="ic_code_48pt" width="48" height="48"/>
         <image name="ic_format_bold_48pt" width="48" height="48"/>
         <image name="ic_format_bolditalic_48pt" width="48" height="48"/>
+        <image name="ic_format_h1_48pt" width="48" height="48"/>
+        <image name="ic_format_h2_48pt" width="48" height="48"/>
+        <image name="ic_format_h3_48pt" width="48" height="48"/>
+        <image name="ic_format_h4_48pt" width="48" height="48"/>
+        <image name="ic_format_h5_48pt" width="48" height="48"/>
+        <image name="ic_format_h6_48pt" width="48" height="48"/>
         <image name="ic_format_italic_48pt" width="48" height="48"/>
         <image name="ic_format_list_bulleted_48pt" width="48" height="48"/>
         <image name="ic_format_list_numbered_48pt" width="48" height="48"/>

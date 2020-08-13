@@ -27,9 +27,21 @@
         case TextConverterFormatItalic:
             return [NSString stringWithFormat:@"*%@*", string];
         case TextConverterFormatBoldItalic:
-                return [NSString stringWithFormat:@"***%@***", string];
+            return [NSString stringWithFormat:@"***%@***", string];
         case TextConverterFormatStrikeThrough:
             return [NSString stringWithFormat:@"~~%@~~", string];
+        case TextConverterFormatH1:
+            return [NSString stringWithFormat:@"# %@", string];
+        case TextConverterFormatH2:
+            return [NSString stringWithFormat:@"## %@", string];
+        case TextConverterFormatH3:
+            return [NSString stringWithFormat:@"### %@", string];
+        case TextConverterFormatH4:
+            return [NSString stringWithFormat:@"#### %@", string];
+        case TextConverterFormatH5:
+            return [NSString stringWithFormat:@"##### %@", string];
+        case TextConverterFormatH6:
+            return [NSString stringWithFormat:@"###### %@", string];
         case TextConverterFormatCode: {
             return [NSString stringWithFormat:@"```\n%@\n```", string];
         }

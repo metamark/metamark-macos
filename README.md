@@ -4,7 +4,6 @@
 
 Menu > Format > Font > Bold+Italic addFontTrait doesn't work
 
-H1-6 button icons are too small
 
 
 

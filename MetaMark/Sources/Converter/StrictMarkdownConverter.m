@@ -46,6 +46,9 @@
         case TextConverterFormatCode: {
             return [NSString stringWithFormat:@"```\n%@\n```", string];
         }
+        case TextConverterAddLineSeparator: {
+            return [NSString stringWithFormat:@"%@\n --- \n", string];
+        }
         case TextConverterFormatLink: {
             return [NSString stringWithFormat:@"[%@](url)", string];
         }

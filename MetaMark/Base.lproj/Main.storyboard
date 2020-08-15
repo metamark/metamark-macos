@@ -965,7 +965,7 @@
                                     <action selector="boldButtonClicked:" target="Wyk-aA-02j" id="0ol-1X-U2H"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" id="wKQ-8L-nft">
+                            <button verticalHuggingPriority="750" id="wKQ-8L-nft">
                                 <rect key="frame" x="526.5" y="269" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h1_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="f44-Ge-Xku">
@@ -976,7 +976,7 @@
                                     <action selector="h1ButtonClicked:" target="Wyk-aA-02j" id="TH8-Vv-zy9"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" id="5CZ-fa-cde">
+                            <button verticalHuggingPriority="750" id="5CZ-fa-cde">
                                 <rect key="frame" x="526.5" y="237" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h2_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L3d-xO-cWd">
@@ -987,7 +987,7 @@
                                     <action selector="h2ButtonClicked:" target="Wyk-aA-02j" id="oqf-qW-ecs"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" id="3Si-KP-s9h">
+                            <button verticalHuggingPriority="750" id="3Si-KP-s9h">
                                 <rect key="frame" x="527.5" y="205" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h3_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RZV-n1-Fi2">
@@ -998,7 +998,7 @@
                                     <action selector="h3ButtonClicked:" target="Wyk-aA-02j" id="KZX-Yt-U99"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" id="uUj-zl-bs8">
+                            <button verticalHuggingPriority="750" id="uUj-zl-bs8">
                                 <rect key="frame" x="527.5" y="173" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h4_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qWR-eH-62N">
@@ -1009,7 +1009,7 @@
                                     <action selector="h4ButtonClicked:" target="Wyk-aA-02j" id="Y4e-vR-Tnh"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" id="KJp-4y-YGZ">
+                            <button verticalHuggingPriority="750" id="KJp-4y-YGZ">
                                 <rect key="frame" x="527.5" y="142" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h5_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HB3-aB-olb">
@@ -1053,7 +1053,7 @@
                                     <action selector="boldItalicButtonClicked:" target="Wyk-aA-02j" id="r2p-Dd-AQx"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" id="8SM-GU-cQf">
+                            <button verticalHuggingPriority="750" id="8SM-GU-cQf">
                                 <rect key="frame" x="527.5" y="110" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_h6_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aGr-oy-LhT">
@@ -1062,6 +1062,17 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="h6ButtonClicked:" target="Wyk-aA-02j" id="7Ou-KT-bVC"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="REb-81-pdC">
+                                <rect key="frame" x="527.5" y="78" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_line_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="L5A-4d-SCR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="lineSeparatorButtonClicked:" target="Wyk-aA-02j" id="Na6-cW-jTU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1093,6 +1104,7 @@
         <image name="ic_format_strikethrough_48pt" width="48" height="48"/>
         <image name="ic_github_32pt" width="32" height="32"/>
         <image name="ic_insert_link_48pt" width="48" height="48"/>
+        <image name="ic_line_48pt" width="48" height="48"/>
         <image name="ic_refresh_48pt" width="48" height="48"/>
     </resources>
 </document>

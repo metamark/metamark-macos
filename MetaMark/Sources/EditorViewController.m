@@ -146,6 +146,17 @@
     [self replaceCharactersInRange:range withString:string];
 }
 
+- (IBAction)lineSeparatorButtonClicked:(NSButton *)sender {
+    NSRange range = self.textView.selectedRange;
+    if (range.length == 0) {
+        return;
+    }
+    NSString *selectedString = [self.textView.string substringWithRange:range];
+    NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
+                                                                                            format:TextConverterAddLineSeparator];
+    [self replaceCharactersInRange:range withString:string];
+}
+
 - (IBAction)strikeThroughButtonClicked:(NSButton *)sender {
     NSRange range = self.textView.selectedRange;
     if (range.length == 0) {

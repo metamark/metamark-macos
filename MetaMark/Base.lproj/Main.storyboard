@@ -362,11 +362,6 @@
                                                             <action selector="addFontTrait:" target="YLy-65-1bz" id="IHV-OB-c03"/>
                                                         </connections>
                                                     </menuItem>
-                                                    <menuItem title="Bold + Italic" tag="1" keyEquivalent="B" id="IGK-f3-mlg">
-                                                        <connections>
-                                                            <action selector="addFontTrait:" target="YLy-65-1bz" id="7dP-c6-tki"/>
-                                                        </connections>
-                                                    </menuItem>
                                                     <menuItem title="Underline" keyEquivalent="u" id="WRG-CD-K1S">
                                                         <connections>
                                                             <action selector="underline:" target="Ady-hI-5gd" id="FYS-2b-JAY"/>
@@ -864,15 +859,15 @@
                                 <rect key="frame" x="0.0" y="37" width="520" height="235"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" id="9vL-R4-GZT">
-                                    <rect key="frame" x="1" y="1" width="503" height="233"/>
+                                    <rect key="frame" x="1" y="1" width="518" height="233"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" selectionGranularity="word" findStyle="panel" incrementalSearchingEnabled="YES" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" smartInsertDelete="YES" id="OK6-y4-1mW">
-                                            <rect key="frame" x="0.0" y="0.0" width="503" height="233"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="518" height="233"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="503" height="233"/>
+                                            <size key="minSize" width="518" height="233"/>
                                             <size key="maxSize" width="567" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -886,7 +881,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GjT-bi-Xo7">
-                                    <rect key="frame" x="504" y="1" width="15" height="233"/>
+                                    <rect key="frame" x="503" y="1" width="16" height="233"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

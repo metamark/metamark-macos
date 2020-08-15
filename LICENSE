@@ -21,3 +21,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 https://en.wikipedia.org/wiki/MIT_License
+
+MetaMark uses various open source components and software by third party developers and protected by different license agreements:
+
+Markdown Editor (MIT License Copyright © Satoshi Iwaki) https://github.com/satoshi-iwaki/markdown-editor-mac-objc/
+normalise.css (MIT License Copyright © Nicolas Gallagher and Jonathan Neal) https://necolas.github.io/normalize.css/
+gfm.css (ISC License Copyright © SNate Goldman) https://github.com/ungoldman/gfm.css/
+pandoc (GPLv2+ License Copyright © John MacFarlane) https://github.com/jgm/pandoc

@@ -919,7 +919,7 @@
                             <button verticalHuggingPriority="750" id="pLd-T1-wfE">
                                 <rect key="frame" x="410.5" y="5" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_code_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="syL-e9-bCL">
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_snippet_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="syL-e9-bCL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -1127,7 +1127,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_code_48pt" width="48" height="48"/>
         <image name="ic_format_blockquote_48pt" width="48" height="48"/>
         <image name="ic_format_bold_48pt" width="48" height="48"/>
         <image name="ic_format_bolditalic_48pt" width="48" height="48"/>
@@ -1146,6 +1145,7 @@
         <image name="ic_insert_link_48pt" width="48" height="48"/>
         <image name="ic_line_48pt" width="48" height="48"/>
         <image name="ic_refresh_48pt" width="48" height="48"/>
+        <image name="ic_snippet_48pt" width="48" height="48"/>
         <image name="ic_table_48pt" width="48" height="48"/>
         <image name="ic_taskcomplete_48pt" width="48" height="48"/>
         <image name="ic_taskincomplete_48pt" width="48" height="48"/>

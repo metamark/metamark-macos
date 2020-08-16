@@ -26,7 +26,10 @@ typedef NS_ENUM(NSUInteger, TextConverterFormat) {
     TextConverterAddLineSeparator,
     TextConverterFormatLink,
     TextConverterFormatListBulleted,
-    TextConverterFormatListNumbered
+    TextConverterFormatTable,
+    TextConverterFormatListNumbered,
+    TextConverterFormatTaskListIncomplete,
+    TextConverterFormatTaskListComplete
 };
 
 @interface TextConverter : NSObject

@@ -72,11 +72,50 @@
             }
             return formattedString;
         }
+        case TextConverterFormatTable: {
+            NSArray<NSString *> *lines = [string componentsSeparatedByString:@"\n"];
+            NSMutableString *formattedString = [@"" mutableCopy];
+            for (NSString *line in lines) {
+                [formattedString appendString:@"| Column 1  | Column 2  | Column 3  |"];
+                [formattedString appendString:@"\n"];
+                [formattedString appendString:@"|:----------|:----------|:----------|"];
+                [formattedString appendString:@"\n"];
+                [formattedString appendString:@"| "];
+                [formattedString appendString:line];
+                [formattedString appendString:@" | "];
+                [formattedString appendString:line];
+                [formattedString appendString:@" | "];
+                [formattedString appendString:line];
+                [formattedString appendString:@" |"];
+                [formattedString appendString:@"\n"];
+            }
+            return formattedString;
+        }
         case TextConverterFormatListNumbered: {
             NSArray<NSString *> *lines = [string componentsSeparatedByString:@"\n"];
             NSMutableString *formattedString = [@"" mutableCopy];
             for (NSString *line in lines) {
                 [formattedString appendString:@"1. "];
+                [formattedString appendString:line];
+                [formattedString appendString:@"\n"];
+            }
+            return formattedString;
+        }
+        case TextConverterFormatTaskListIncomplete: {
+            NSArray<NSString *> *lines = [string componentsSeparatedByString:@"\n"];
+            NSMutableString *formattedString = [@"" mutableCopy];
+            for (NSString *line in lines) {
+                [formattedString appendString:@"- [ ] "];
+                [formattedString appendString:line];
+                [formattedString appendString:@"\n"];
+            }
+            return formattedString;
+        }
+        case TextConverterFormatTaskListComplete: {
+            NSArray<NSString *> *lines = [string componentsSeparatedByString:@"\n"];
+            NSMutableString *formattedString = [@"" mutableCopy];
+            for (NSString *line in lines) {
+                [formattedString appendString:@"- [x] "];
                 [formattedString appendString:line];
                 [formattedString appendString:@"\n"];
             }

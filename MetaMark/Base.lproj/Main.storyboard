@@ -1078,7 +1078,29 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="quoteButtonClicked:" target="Wyk-aA-02j" id="nWz-A5-7O8"/>
+                                    <action selector="tableButtonClicked:" target="Wyk-aA-02j" id="nWz-A5-7O8"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="VYV-1j-Elt">
+                                <rect key="frame" x="293.5" y="5" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_taskcomplete_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jGK-ak-IGs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="completeTaskButtonClicked:" target="Wyk-aA-02j" id="uUG-6F-JFA"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="1vJ-Z9-2OQ">
+                                <rect key="frame" x="254.5" y="5" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_taskincomplete_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8it-xS-izn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="incompleteTaskButtonClicked:" target="Wyk-aA-02j" id="WoQ-vR-DkD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1113,5 +1135,7 @@
         <image name="ic_line_48pt" width="48" height="48"/>
         <image name="ic_refresh_48pt" width="48" height="48"/>
         <image name="ic_table_48pt" width="48" height="48"/>
+        <image name="ic_taskcomplete_48pt" width="48" height="48"/>
+        <image name="ic_taskincomplete_48pt" width="48" height="48"/>
     </resources>
 </document>

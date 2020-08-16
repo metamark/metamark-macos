@@ -187,6 +187,17 @@
     [self replaceCharactersInRange:range withString:string];
 }
 
+- (IBAction)tableButtonClicked:(NSButton *)sender {
+    NSRange range = self.textView.selectedRange;
+    if (range.length == 0) {
+        return;
+    }
+    NSString *selectedString = [self.textView.string substringWithRange:range];
+    NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
+                                                                                            format:TextConverterFormatTable];
+    [self replaceCharactersInRange:range withString:string];
+}
+
 - (IBAction)codeButtonClicked:(NSButton *)sender {
     NSRange range = self.textView.selectedRange;
     if (range.length == 0) {
@@ -228,6 +239,28 @@
     NSString *selectedString = [self.textView.string substringWithRange:range];
     NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
                                                                                             format:TextConverterFormatListNumbered];
+    [self replaceCharactersInRange:range withString:string];
+}
+
+- (IBAction)incompleteTaskButtonClicked:(NSButton *)sender {
+    NSRange range = self.textView.selectedRange;
+    if (range.length == 0) {
+        return;
+    }
+    NSString *selectedString = [self.textView.string substringWithRange:range];
+    NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
+                                                                                            format:TextConverterFormatTaskListIncomplete];
+    [self replaceCharactersInRange:range withString:string];
+}
+
+- (IBAction)completeTaskButtonClicked:(NSButton *)sender {
+    NSRange range = self.textView.selectedRange;
+    if (range.length == 0) {
+        return;
+    }
+    NSString *selectedString = [self.textView.string substringWithRange:range];
+    NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
+                                                                                            format:TextConverterFormatTaskListComplete];
     [self replaceCharactersInRange:range withString:string];
 }
 

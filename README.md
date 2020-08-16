@@ -2,7 +2,7 @@
 
 # Known Issues
 
-Menu > Format > Font > Bold+Italic addFontTrait doesn't work
+TextConverterFormatTable method is not smart. Needs to be rethought. 
 
 
 

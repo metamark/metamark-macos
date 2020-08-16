@@ -941,7 +941,7 @@
                             <button verticalHuggingPriority="750" id="7Pd-ht-dDc">
                                 <rect key="frame" x="332.5" y="5" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_quote_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nm0-Xr-PvM">
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_format_quotedtext_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nm0-Xr-PvM">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -1140,7 +1140,7 @@
         <image name="ic_format_italic_48pt" width="48" height="48"/>
         <image name="ic_format_list_bulleted_48pt" width="48" height="48"/>
         <image name="ic_format_list_numbered_48pt" width="48" height="48"/>
-        <image name="ic_format_quote_48pt" width="48" height="48"/>
+        <image name="ic_format_quotedtext_48pt" width="48" height="48"/>
         <image name="ic_format_strikethrough_48pt" width="48" height="48"/>
         <image name="ic_github_32pt" width="32" height="32"/>
         <image name="ic_insert_link_48pt" width="48" height="48"/>

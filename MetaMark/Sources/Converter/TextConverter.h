@@ -24,6 +24,8 @@ typedef NS_ENUM(NSUInteger, TextConverterFormat) {
     TextConverterFormatQuote,
     TextConverterFormatCode,
     TextConverterAddLineSeparator,
+    TextConverterAddImage,
+    TextConverterAddImageWithLink,
     TextConverterFormatLink,
     TextConverterFormatListBulleted,
     TextConverterFormatTable,

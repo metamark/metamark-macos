@@ -48,6 +48,12 @@
         case TextConverterAddLineSeparator: {
             return [NSString stringWithFormat:@"%@\n---\n", string];
         }
+        case TextConverterAddImage: {
+            return [NSString stringWithFormat:@"%@\n![Alt, 75%%](url|path)\n", string];
+        }
+        case TextConverterAddImageWithLink: {
+            return [NSString stringWithFormat:@"%@\n[![Alt](url|path)](./somelink)\n", string];
+        }
         case TextConverterFormatLink: {
             return [NSString stringWithFormat:@"[%@](url)", string];
         }

@@ -1,3 +1,5 @@
+Welcome to MetaMark!
+
 GitHub-style markdown sample file
 
 **Bold text**

@@ -64,7 +64,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Workspace Session
-*.xcworkspace
+MetaMark.xcworkspace/
 
 # Deprecated Files
 MetaMark/Resources/markdown.css.2.1.3

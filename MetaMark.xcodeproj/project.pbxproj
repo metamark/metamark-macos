@@ -33,9 +33,12 @@
 		4F94D4312048488500D85BEA /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D4302048488500D85BEA /* markdown.css */; };
 		4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D43420484F7300D85BEA /* markdown-header.txt */; };
 		E229E47324E07FE200A02729 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E229E47224E07FE200A02729 /* Credits.rtf */; };
+		E23503D324E9B9DC00103DB5 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		E23503D524E9B9E000103DB5 /* libAppAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23503D424E9B9E000103DB5 /* libAppAuth.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		E23503D724E9BC1500103DB5 /* libPods-MetaMark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */; };
 		E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */; };
 		E29C2B9924DD9BAB000067E3 /* markdown.css.2.1.3 in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */; };
-		F238DC77B94B402EA55B030D /* libPods-MetaMark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */; };
+		E2F2B96724EAEEA9009194DB /* welcome.md in Resources */ = {isa = PBXBuildFile; fileRef = E2F2B96624EAEEA9009194DB /* welcome.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +109,12 @@
 		B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetaMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.debug.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.debug.xcconfig"; sourceTree = "<group>"; };
 		E229E47224E07FE200A02729 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		E23503D024E9B7B700103DB5 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = MetaMark/Resources; sourceTree = "<group>"; };
+		E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGCDWebServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23503D424E9B9E000103DB5 /* libAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "pandoc-citeproc"; sourceTree = "<group>"; };
 		E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markdown.css.2.1.3; sourceTree = "<group>"; };
+		E2F2B96624EAEEA9009194DB /* welcome.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = welcome.md; sourceTree = "<group>"; };
 		FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.release.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F238DC77B94B402EA55B030D /* libPods-MetaMark.a in Frameworks */,
+				E23503D724E9BC1500103DB5 /* libPods-MetaMark.a in Frameworks */,
+				E23503D524E9B9E000103DB5 /* libAppAuth.a in Frameworks */,
+				E23503D324E9B9DC00103DB5 /* libGCDWebServer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 		4F94D4292046E6C300D85BEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E2F2B96624EAEEA9009194DB /* welcome.md */,
 				E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */,
 				4F5AE298207D0F9700C72733 /* gfm-header.txt */,
 				4F94D42A2046E6C300D85BEA /* gfm.css */,
@@ -271,6 +281,9 @@
 		F7FB241C72DC9FD0D9A9EAD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E23503D424E9B9E000103DB5 /* libAppAuth.a */,
+				E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */,
+				E23503D024E9B7B700103DB5 /* Resources */,
 				B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */,
 			);
 			name = Frameworks;
@@ -345,7 +358,7 @@
 				TargetAttributes = {
 					4F94D3E920458A3B00D85BEA = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -390,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F94D42B2046E6C300D85BEA /* gfm.css in Resources */,
+				E2F2B96724EAEEA9009194DB /* welcome.md in Resources */,
 				4F94D3F420458A3B00D85BEA /* Assets.xcassets in Resources */,
 				4F5AE299207D0F9700C72733 /* gfm-header.txt in Resources */,
 				4F94D42D2046E8A600D85BEA /* sample.md in Resources */,
@@ -557,6 +571,8 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -576,6 +592,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -614,6 +631,8 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -626,6 +645,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -634,19 +654,27 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = MetaMark/MetaMark.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 12;
+				COPYING_PRESERVES_HFS_DATA = YES;
+				CURRENT_PROJECT_VERSION = 25;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = B4LG28JB2V;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				PRODUCT_NAME = MetaMark;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -654,19 +682,28 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = MetaMark/MetaMark.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 12;
+				COPYING_PRESERVES_HFS_DATA = YES;
+				CURRENT_PROJECT_VERSION = 25;
+				DEBUG_INFORMATION_FORMAT = "";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = B4LG28JB2V;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				PRODUCT_NAME = MetaMark;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

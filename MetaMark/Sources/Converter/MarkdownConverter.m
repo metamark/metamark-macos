@@ -45,6 +45,9 @@
         case TextConverterFormatCode: {
             return [NSString stringWithFormat:@"```\n%@\n```", string];
         }
+        case TextConverterFormatInlineCode: {
+            return [NSString stringWithFormat:@" '%@' ", string];
+        }
         case TextConverterAddLineSeparator: {
             return [NSString stringWithFormat:@"%@\n---\n", string];
         }

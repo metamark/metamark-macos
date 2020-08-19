@@ -1147,6 +1147,17 @@
                                     <action selector="imageButtonClicked:" target="Wyk-aA-02j" id="jo1-kX-TZI"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" id="RmJ-Qy-FFd">
+                                <rect key="frame" x="637.5" y="46" width="32" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="ic_dropdown_48pt" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3K3-71-t4w">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="lineSeparatorButtonClicked:" target="Wyk-aA-02j" id="mTY-gs-fQv"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -1160,6 +1171,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_dropdown_48pt" width="48" height="48"/>
         <image name="ic_format_blockquote_48pt" width="48" height="48"/>
         <image name="ic_format_bold_48pt" width="48" height="48"/>
         <image name="ic_format_bolditalic_48pt" width="48" height="48"/>

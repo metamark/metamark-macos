@@ -36,8 +36,8 @@
     return nil;
 }
 
-- (nullable NSString *)sample {
-    NSString *path = [NSBundle.mainBundle pathForResource:@"sample" ofType:@"md"];
+- (nullable NSString *)welcome {
+    NSString *path = [NSBundle.mainBundle pathForResource:@"welcome" ofType:@"md"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }

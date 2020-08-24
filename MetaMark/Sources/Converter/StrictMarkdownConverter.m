@@ -85,7 +85,7 @@
             NSArray<NSString *> *lines = [string componentsSeparatedByString:@"\n"];
             NSMutableString *formattedString = [@"" mutableCopy];
             for (NSString *line in lines) {
-                [formattedString appendString:@"| Column 1  | Column 2  | Column 3  |"];
+                [formattedString appendString:@"| Column 1 | Column 2 | Column 3 |"];
                 [formattedString appendString:@"\n"];
                 [formattedString appendString:@"|:----------|:----------|:----------|"];
                 [formattedString appendString:@"\n"];
@@ -96,6 +96,21 @@
                 [formattedString appendString:@" | "];
                 [formattedString appendString:line];
                 [formattedString appendString:@" |"];
+                [formattedString appendString:@"\n"];
+            }
+            return formattedString;
+        }
+        case TextConverterFormatDropdown: {
+            NSArray<NSString *> *lines = [string componentsSeparatedByString:@"\n"];
+            NSMutableString *formattedString = [@"" mutableCopy];
+            for (NSString *line in lines) {
+                [formattedString appendString:@"<details>"];
+                [formattedString appendString:@"\n"];
+                [formattedString appendString:@"<summary>Dropdown Title</summary>"];
+                [formattedString appendString:@"\n"];
+                [formattedString appendString:line];
+                [formattedString appendString:@"\n"];
+                [formattedString appendString:@"</details>"];
                 [formattedString appendString:@"\n"];
             }
             return formattedString;

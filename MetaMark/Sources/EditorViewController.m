@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do view setup here.
     
-    self.textView.string = [self loadSample];
+    self.textView.string = [self loadWelcome];
     [ConverterManager.sharedInstance setContentWithString:self.textView.string];
 }
 
@@ -214,6 +214,17 @@
     [self replaceCharactersInRange:range withString:string];
 }
 
+- (IBAction)dropdownButtonClicked:(NSButton *)sender {
+    NSRange range = self.textView.selectedRange;
+    if (range.length == 0) {
+        return;
+    }
+    NSString *selectedString = [self.textView.string substringWithRange:range];
+    NSString *string = [ConverterManager.sharedInstance.selectedConverter formattedStringWithString:selectedString
+                                                                                            format:TextConverterFormatDropdown];
+    [self replaceCharactersInRange:range withString:string];
+}
+
 - (IBAction)codeButtonClicked:(NSButton *)sender {
     NSRange range = self.textView.selectedRange;
     if (range.length == 0) {
@@ -393,8 +404,8 @@
 
 #pragma mark - Private Methods
 
-- (NSString *)loadSample {
-    return ConverterManager.sharedInstance.selectedConverter.sample;
+- (NSString *)loadWelcome {
+    return ConverterManager.sharedInstance.selectedConverter.welcome;
 }
 
 - (NSString *)documentTitle {

@@ -67,6 +67,11 @@ function fancyAlert(arg) {
 
 > Blockquote text
 
+<details>
+<summary>Dropdown Title</summary>
+Here the dropdown text.
+</details>
+
 ## Line separator
 ---
 

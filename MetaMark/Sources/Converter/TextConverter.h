@@ -30,6 +30,7 @@ typedef NS_ENUM(NSUInteger, TextConverterFormat) {
     TextConverterFormatLink,
     TextConverterFormatListBulleted,
     TextConverterFormatTable,
+    TextConverterFormatDropdown,
     TextConverterFormatListNumbered,
     TextConverterFormatTaskListIncomplete,
     TextConverterFormatTaskListComplete
@@ -38,7 +39,7 @@ typedef NS_ENUM(NSUInteger, TextConverterFormat) {
 @interface TextConverter : NSObject
 
 @property (readonly, copy) NSString *title;
-@property (nullable, readonly, copy) NSString *sample;
+@property (nullable, readonly, copy) NSString *welcome;
 @property (readonly, copy) NSString *html;
 @property (readonly, copy) NSData *data;
 

@@ -863,15 +863,15 @@
                                 <rect key="frame" x="0.0" y="37" width="633" height="269"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" id="9vL-R4-GZT">
-                                    <rect key="frame" x="1" y="1" width="616" height="267"/>
+                                    <rect key="frame" x="1" y="1" width="631" height="267"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" selectionGranularity="word" findStyle="panel" incrementalSearchingEnabled="YES" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" smartInsertDelete="YES" id="OK6-y4-1mW">
-                                            <rect key="frame" x="0.0" y="0.0" width="616" height="267"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="631" height="267"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="616" height="267"/>
+                                            <size key="minSize" width="631" height="267"/>
                                             <size key="maxSize" width="998" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <connections>
@@ -885,7 +885,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GjT-bi-Xo7">
-                                    <rect key="frame" x="617" y="1" width="15" height="267"/>
+                                    <rect key="frame" x="616" y="1" width="16" height="267"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -1159,7 +1159,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="lineSeparatorButtonClicked:" target="Wyk-aA-02j" id="mTY-gs-fQv"/>
+                                    <action selector="dropdownButtonClicked:" target="Wyk-aA-02j" id="mTY-gs-fQv"/>
                                 </connections>
                             </button>
                         </subviews>

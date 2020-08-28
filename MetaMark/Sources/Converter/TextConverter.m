@@ -42,6 +42,12 @@
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
+- (nullable NSString *)sample {
+    NSString *path = [NSBundle.mainBundle pathForResource:@"sample" ofType:@"md"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
 - (NSString *)html {
     NSString *html = @"<!DOCTYPE html>"
     "<html lang=\"ja\">"

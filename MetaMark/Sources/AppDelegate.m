@@ -16,11 +16,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSLog(@"MetaMark has finished init phase.");
 }
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    NSLog(@"MetaMark has been terminated.");
 }
 
 

@@ -40,6 +40,7 @@ typedef NS_ENUM(NSUInteger, TextConverterFormat) {
 
 @property (readonly, copy) NSString *title;
 @property (nullable, readonly, copy) NSString *welcome;
+@property (nullable, readonly, copy) NSString *sample;
 @property (readonly, copy) NSString *html;
 @property (readonly, copy) NSData *data;
 

@@ -30,6 +30,7 @@
     
     self.textView.string = [self loadWelcome];
     [ConverterManager.sharedInstance setContentWithString:self.textView.string];
+    
 }
 
 - (void)setRepresentedObject:(id)representedObject {
@@ -374,6 +375,41 @@
     }];
 }
 
+- (IBAction)openDocumentSample:(id)sender {
+    if (!_dirty) {
+        [self loadSample];
+        return;
+    }
+    NSAlert *alert = [[NSAlert alloc] init];
+    alert.informativeText = @"Your changes will be lost if you don't save them.";
+    alert.messageText = @"Do you want to save the changes you made to New file?";
+    alert.alertStyle = NSAlertStyleWarning;
+    [alert addButtonWithTitle:@"Save"];
+    [alert addButtonWithTitle:@"Cancel"];
+    [alert addButtonWithTitle:@"Don't Save"];
+    [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
+        switch (returnCode) {
+            case NSAlertFirstButtonReturn: {  // Save
+                if ([self saveFile]) {
+                    return;
+                }
+                [self showSaveFilePanelWithCompletionHandler:^(BOOL result) {
+                    if (result) {
+                        [self loadSample];
+                    }
+                }];
+                break;
+            }
+            case NSAlertThirdButtonReturn:  // Don't Save
+                [self loadSample];
+                break;
+            case NSAlertSecondButtonReturn: // Cancel
+            default:
+                break;
+        }
+    }];
+}
+
 - (IBAction)saveDocument:(id)sender {
     if ([self saveFile]) {
         return;
@@ -405,6 +441,10 @@
 #pragma mark - Private Methods
 
 - (NSString *)loadWelcome {
+    return ConverterManager.sharedInstance.selectedConverter.welcome;
+}
+
+- (NSString *)loadSample {
     return ConverterManager.sharedInstance.selectedConverter.welcome;
 }
 

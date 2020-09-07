@@ -614,6 +614,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -667,6 +668,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -695,6 +697,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				PRODUCT_NAME = MetaMark;
 				PROVISIONING_PROFILE_SPECIFIER = "Developer ID Distribution for app.metamark.macos";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -724,6 +727,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				PRODUCT_NAME = MetaMark;
 				PROVISIONING_PROFILE_SPECIFIER = "Developer ID Distribution for app.metamark.macos";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

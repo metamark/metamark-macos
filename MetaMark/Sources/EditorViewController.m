@@ -445,7 +445,7 @@
 }
 
 - (NSString *)loadSample {
-    return ConverterManager.sharedInstance.selectedConverter.welcome;
+    return ConverterManager.sharedInstance.selectedConverter.sample;
 }
 
 - (NSString *)documentTitle {

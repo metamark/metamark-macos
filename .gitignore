@@ -68,3 +68,6 @@ MetaMark.xcworkspace/
 
 # Deprecated Files
 MetaMark/Resources/markdown.css.2.1.3
+
+# Pandoc Sources
+pandoc-src/

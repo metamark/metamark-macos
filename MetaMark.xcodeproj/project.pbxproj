@@ -24,7 +24,6 @@
 		4F7B193E208CCF04009BE0ED /* GitHubGistsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B193D208CCF04009BE0ED /* GitHubGistsClient.m */; };
 		4F7B1941208CD17F009BE0ED /* GitHubGistsContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B1940208CD17F009BE0ED /* GitHubGistsContent.m */; };
 		4F94D3F420458A3B00D85BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D3F320458A3B00D85BEA /* Assets.xcassets */; };
-		4F94D3F720458A3B00D85BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D3F520458A3B00D85BEA /* Main.storyboard */; };
 		4F94D40520458A3B00D85BEA /* MetaMarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94D40420458A3B00D85BEA /* MetaMarkTests.m */; };
 		4F94D41020458A3B00D85BEA /* MetaMarkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F94D40F20458A3B00D85BEA /* MetaMarkUITests.m */; };
 		4F94D4282045903100D85BEA /* pandoc in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D4272045903100D85BEA /* pandoc */; };
@@ -36,8 +35,8 @@
 		E23503D324E9B9DC00103DB5 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		E23503D524E9B9E000103DB5 /* libAppAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23503D424E9B9E000103DB5 /* libAppAuth.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		E23503D724E9BC1500103DB5 /* libPods-MetaMark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */; };
+		E28F0FF02506836F00C7A802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D3F520458A3B00D85BEA /* Main.storyboard */; };
 		E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */; };
-		E29C2B9924DD9BAB000067E3 /* markdown.css.2.1.3 in Resources */ = {isa = PBXBuildFile; fileRef = E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */; };
 		E2F2B96724EAEEA9009194DB /* welcome.md in Resources */ = {isa = PBXBuildFile; fileRef = E2F2B96624EAEEA9009194DB /* welcome.md */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +111,7 @@
 		E23503D024E9B7B700103DB5 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = MetaMark/Resources; sourceTree = "<group>"; };
 		E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGCDWebServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23503D424E9B9E000103DB5 /* libAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F0FEC25067C7E00C7A802 /* pandoc-src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "pandoc-src"; sourceTree = "<group>"; };
 		E29C2B9624DD9BA2000067E3 /* pandoc-citeproc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "pandoc-citeproc"; sourceTree = "<group>"; };
 		E29C2B9824DD9BAB000067E3 /* markdown.css.2.1.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = markdown.css.2.1.3; sourceTree = "<group>"; };
 		E2F2B96624EAEEA9009194DB /* welcome.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = welcome.md; sourceTree = "<group>"; };
@@ -207,6 +207,7 @@
 				4F94D40320458A3B00D85BEA /* MetaMarkTests */,
 				4F94D40E20458A3B00D85BEA /* MetaMarkUITests */,
 				4F94D3EB20458A3B00D85BEA /* Products */,
+				E28F0FEC25067C7E00C7A802 /* pandoc-src */,
 				46DF1E5B35E9D442EF4BE07B /* Pods */,
 				F7FB241C72DC9FD0D9A9EAD0 /* Frameworks */,
 			);
@@ -297,9 +298,10 @@
 			buildConfigurationList = 4F94D41420458A3B00D85BEA /* Build configuration list for PBXNativeTarget "MetaMark" */;
 			buildPhases = (
 				25B23FED602241E33CE35D0C /* [CP] Check Pods Manifest.lock */,
-				4F7B1945208E1774009BE0ED /* ShellScript */,
+				4F7B1945208E1774009BE0ED /* Download and copy Pandoc library */,
 				4F94D3E620458A3B00D85BEA /* Sources */,
 				4F94D3E720458A3B00D85BEA /* Frameworks */,
+				E28F0FEF250682B700C7A802 /* Increment Build Number by 1 */,
 				4F94D3E820458A3B00D85BEA /* Resources */,
 			);
 			buildRules = (
@@ -353,7 +355,7 @@
 		4F94D3E220458A3B00D85BEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Francesco Baldassarri";
 				TargetAttributes = {
 					4F94D3E920458A3B00D85BEA = {
@@ -402,15 +404,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28F0FF02506836F00C7A802 /* Main.storyboard in Resources */,
 				4F94D42B2046E6C300D85BEA /* gfm.css in Resources */,
 				E2F2B96724EAEEA9009194DB /* welcome.md in Resources */,
 				4F94D3F420458A3B00D85BEA /* Assets.xcassets in Resources */,
 				4F5AE299207D0F9700C72733 /* gfm-header.txt in Resources */,
 				4F94D42D2046E8A600D85BEA /* sample.md in Resources */,
-				E29C2B9924DD9BAB000067E3 /* markdown.css.2.1.3 in Resources */,
 				4F94D4282045903100D85BEA /* pandoc in Resources */,
 				E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */,
-				4F94D3F720458A3B00D85BEA /* Main.storyboard in Resources */,
 				E229E47324E07FE200A02729 /* Credits.rtf in Resources */,
 				4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */,
 				4F94D4312048488500D85BEA /* markdown.css in Resources */,
@@ -456,18 +457,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4F7B1945208E1774009BE0ED /* ShellScript */ = {
+		4F7B1945208E1774009BE0ED /* Download and copy Pandoc library */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Download and copy Pandoc library";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -e \"${PROJECT_DIR}/MetaMark/Binaries/pandoc\" ]; then\n  exit 0\nfi\n\n# Download and copy Pandoc library\nPANDOC_VERSION=\"2.1.3\"\nPANDOC_FILE_NAME=\"pandoc-${PANDOC_VERSION}\"\n\nrm -rf \"${PROJECT_DIR}/tmp\"\nmkdir \"${PROJECT_DIR}/tmp\"\ncd \"${PROJECT_DIR}/tmp\"\n\nwget \"https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/${PANDOC_FILE_NAME}-macOS.zip\"\nunzip \"pandoc-${PANDOC_VERSION}-macOS.zip\"\n\nmkdir -p \"${PROJECT_DIR}/MetaMark/Binaries\"\ncp \"${PANDOC_FILE_NAME}/bin/pandoc\" \"${PROJECT_DIR}/MetaMark/Binaries/.\"\n\nrm -rf \"${PROJECT_DIR}/tmp\"\n";
+		};
+		E28F0FEF250682B700C7A802 /* Increment Build Number by 1 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build Number by 1";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "currentNumber=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" \"$PRODUCT_SETTINGS_PATH\")\nif [ \"$buildNumber\" -ne \"$currentNumber\" ] ; then\n  /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$PRODUCT_SETTINGS_PATH\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -654,7 +674,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = MetaMark/MetaMark.entitlements;
@@ -662,7 +681,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPYING_PRESERVES_HFS_DATA = YES;
-				CURRENT_PROJECT_VERSION = 34;
+				CURRENT_PROJECT_VERSION = 37;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = B4LG28JB2V;
@@ -671,6 +690,7 @@
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				PRODUCT_NAME = MetaMark;
@@ -682,7 +702,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC6655FB8636D0083799D404 /* Pods-MetaMark.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = MetaMark/MetaMark.entitlements;
@@ -690,7 +709,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPYING_PRESERVES_HFS_DATA = YES;
-				CURRENT_PROJECT_VERSION = 34;
+				CURRENT_PROJECT_VERSION = 37;
 				DEBUG_INFORMATION_FORMAT = "";
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = B4LG28JB2V;
@@ -700,6 +719,7 @@
 				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/MetaMark/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.metamark.macos;
 				PRODUCT_NAME = MetaMark;

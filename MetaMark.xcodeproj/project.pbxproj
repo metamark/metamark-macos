@@ -31,6 +31,7 @@
 		4F94D42D2046E8A600D85BEA /* sample.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D42C2046E8A600D85BEA /* sample.md */; };
 		4F94D4312048488500D85BEA /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D4302048488500D85BEA /* markdown.css */; };
 		4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F94D43420484F7300D85BEA /* markdown-header.txt */; };
+		E20A03B12506CD3500CEB5CB /* cabal-bin in Resources */ = {isa = PBXBuildFile; fileRef = E20A03B02506CD3500CEB5CB /* cabal-bin */; };
 		E229E47324E07FE200A02729 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E229E47224E07FE200A02729 /* Credits.rtf */; };
 		E23503D324E9B9DC00103DB5 /* libGCDWebServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		E23503D524E9B9E000103DB5 /* libAppAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E23503D424E9B9E000103DB5 /* libAppAuth.a */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -107,6 +108,7 @@
 		4F94D43420484F7300D85BEA /* markdown-header.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "markdown-header.txt"; sourceTree = "<group>"; };
 		B8895D506FFAE37B501BDD1A /* libPods-MetaMark.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MetaMark.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A167C807087E93F07AC312 /* Pods-MetaMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaMark.debug.xcconfig"; path = "Target Support Files/Pods-MetaMark/Pods-MetaMark.debug.xcconfig"; sourceTree = "<group>"; };
+		E20A03B02506CD3500CEB5CB /* cabal-bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "cabal-bin"; sourceTree = "<group>"; };
 		E229E47224E07FE200A02729 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E23503D024E9B7B700103DB5 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = MetaMark/Resources; sourceTree = "<group>"; };
 		E23503D224E9B9DC00103DB5 /* libGCDWebServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGCDWebServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 				4F94D40320458A3B00D85BEA /* MetaMarkTests */,
 				4F94D40E20458A3B00D85BEA /* MetaMarkUITests */,
 				4F94D3EB20458A3B00D85BEA /* Products */,
+				E20A03B02506CD3500CEB5CB /* cabal-bin */,
 				E28F0FEC25067C7E00C7A802 /* pandoc-src */,
 				46DF1E5B35E9D442EF4BE07B /* Pods */,
 				F7FB241C72DC9FD0D9A9EAD0 /* Frameworks */,
@@ -414,6 +417,7 @@
 				E29C2B9724DD9BA2000067E3 /* pandoc-citeproc in Resources */,
 				E229E47324E07FE200A02729 /* Credits.rtf in Resources */,
 				4F94D43520484F7300D85BEA /* markdown-header.txt in Resources */,
+				E20A03B12506CD3500CEB5CB /* cabal-bin in Resources */,
 				4F94D4312048488500D85BEA /* markdown.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

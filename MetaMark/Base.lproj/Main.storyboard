@@ -812,22 +812,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="680" height="235"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <wkWebView wantsLayer="YES" id="5Hq-GR-HlJ">
+                            <customView identifier="WebViewHolder" wantsLayer="YES" id="bLf-KS-92o">
                                 <rect key="frame" x="0.0" y="37" width="680" height="170"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="170" id="K9X-00-ovT"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="680" id="zwP-6a-iQ1"/>
                                 </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                                <connections>
-                                    <outlet property="UIDelegate" destination="fDo-d1-ebe" id="CHc-9J-npy"/>
-                                    <outlet property="navigationDelegate" destination="fDo-d1-ebe" id="SYb-AA-bHN"/>
-                                </connections>
-                            </wkWebView>
+                            </customView>
                             <button verticalHuggingPriority="750" id="m1S-Ha-xc4">
                                 <rect key="frame" x="643.5" y="208" width="32" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
@@ -853,7 +845,7 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="5Hq-GR-HlJ" id="Yuz-am-CCk"/>
+                        <outlet property="webViewHolder" destination="bLf-KS-92o" id="8Ut-1Q-JPW"/>
                     </connections>
                 </viewController>
                 <customObject id="a1O-bo-B4z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

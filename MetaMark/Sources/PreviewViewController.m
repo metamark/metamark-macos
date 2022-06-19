@@ -13,9 +13,11 @@
 
 @interface PreviewViewController () <WKNavigationDelegate, WKUIDelegate>
 
-@property (weak) IBOutlet WKWebView *webView;
+@property (weak) IBOutlet NSView *webViewHolder;
 
 @end
+
+WKWebView *webView;
 
 @implementation PreviewViewController {
     WKNavigation *_navigation;
@@ -29,7 +31,10 @@
                                            selector:@selector(didChangeContentNotification:)
                                                name:ConverterManagerDidChangeContentNotification
                                              object:nil];
-    
+
+     webView = [[WKWebView alloc] initWithFrame:self.webViewHolder.bounds];
+    [webView setAutoresizingMask:(NSViewWidthSizable | NSViewHeightSizable)];
+    [self.webViewHolder addSubview:webView];
     _visibleRect = NSZeroRect;
     [self relaodHtml];
 }
@@ -43,7 +48,7 @@
 #pragma mark - WKNavigationDelegate
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
-    [self.webView scrollRectToVisible:_visibleRect];
+    [webView scrollRectToVisible:_visibleRect];
 }
 
 #pragma mark - Notification Handler
@@ -57,8 +62,8 @@
 #pragma mark - Private Methods
 
 - (void)relaodHtml {
-    _visibleRect = self.webView.visibleRect;
-    _navigation = [self.webView loadHTMLString:ConverterManager.sharedInstance.html
+    _visibleRect = webView.visibleRect;
+    _navigation = [webView loadHTMLString:ConverterManager.sharedInstance.html
                                        baseURL:NSBundle.mainBundle.resourceURL];
 }
 
